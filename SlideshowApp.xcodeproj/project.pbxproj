@@ -13,6 +13,11 @@
 		D1EE69C2297C02FD0023663D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69C0297C02FD0023663D /* Main.storyboard */; };
 		D1EE69C4297C02FF0023663D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69C3297C02FF0023663D /* Assets.xcassets */; };
 		D1EE69C7297C02FF0023663D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69C5297C02FF0023663D /* LaunchScreen.storyboard */; };
+		D1EE69CF297C06F80023663D /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69CE297C06F80023663D /* spring.jpeg */; };
+		D1EE69D1297C06FC0023663D /* summer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69D0297C06FC0023663D /* summer.jpeg */; };
+		D1EE69D3297C07000023663D /* autumn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69D2297C07000023663D /* autumn.jpeg */; };
+		D1EE69D5297C070B0023663D /* winter.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69D4297C070B0023663D /* winter.jpeg */; };
+		D1EE69D7297C08190023663D /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE69D6297C08180023663D /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		D1EE69C3297C02FF0023663D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EE69C6297C02FF0023663D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1EE69C8297C02FF0023663D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE69CE297C06F80023663D /* spring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spring.jpeg; sourceTree = "<group>"; };
+		D1EE69D0297C06FC0023663D /* summer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summer.jpeg; sourceTree = "<group>"; };
+		D1EE69D2297C07000023663D /* autumn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autumn.jpeg; sourceTree = "<group>"; };
+		D1EE69D4297C070B0023663D /* winter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winter.jpeg; sourceTree = "<group>"; };
+		D1EE69D6297C08180023663D /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				D1EE69BA297C02FD0023663D /* AppDelegate.swift */,
 				D1EE69BC297C02FD0023663D /* SceneDelegate.swift */,
 				D1EE69BE297C02FD0023663D /* ViewController.swift */,
+				D1EE69D6297C08180023663D /* NextViewController.swift */,
 				D1EE69C0297C02FD0023663D /* Main.storyboard */,
 				D1EE69C3297C02FF0023663D /* Assets.xcassets */,
 				D1EE69C5297C02FF0023663D /* LaunchScreen.storyboard */,
 				D1EE69C8297C02FF0023663D /* Info.plist */,
+				D1EE69CE297C06F80023663D /* spring.jpeg */,
+				D1EE69D0297C06FC0023663D /* summer.jpeg */,
+				D1EE69D2297C07000023663D /* autumn.jpeg */,
+				D1EE69D4297C070B0023663D /* winter.jpeg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -125,8 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EE69D5297C070B0023663D /* winter.jpeg in Resources */,
 				D1EE69C7297C02FF0023663D /* LaunchScreen.storyboard in Resources */,
+				D1EE69D3297C07000023663D /* autumn.jpeg in Resources */,
 				D1EE69C4297C02FF0023663D /* Assets.xcassets in Resources */,
+				D1EE69CF297C06F80023663D /* spring.jpeg in Resources */,
+				D1EE69D1297C06FC0023663D /* summer.jpeg in Resources */,
 				D1EE69C2297C02FD0023663D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EE69BF297C02FD0023663D /* ViewController.swift in Sources */,
+				D1EE69D7297C08190023663D /* NextViewController.swift in Sources */,
 				D1EE69BB297C02FD0023663D /* AppDelegate.swift in Sources */,
 				D1EE69BD297C02FD0023663D /* SceneDelegate.swift in Sources */,
 			);
