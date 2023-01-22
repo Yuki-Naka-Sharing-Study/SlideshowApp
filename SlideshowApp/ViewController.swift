@@ -135,8 +135,8 @@ class ViewController: UIViewController {
             backButton.isEnabled = false
             goButton.isEnabled = false
             
-            // ボタンの名前を「停止」にする
-            playbackStopButton.setTitle("停止", for: .normal)
+            // ボタンの名前を「再生」にする
+            playbackStopButton.setTitle("再生", for: .normal)
             
         } else {
             // 停止時の処理を実装
@@ -149,8 +149,8 @@ class ViewController: UIViewController {
             backButton.isEnabled = true
             goButton.isEnabled = true
             
-            // ボタンの名前を「再生」にする
-            playbackStopButton.setTitle("再生", for: .normal)
+            // ボタンの名前を「停止」にする
+            playbackStopButton.setTitle("停止", for: .normal)
         }
         
     }

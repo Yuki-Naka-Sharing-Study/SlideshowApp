@@ -24,6 +24,7 @@ class NextViewController: UIViewController {
         print("タップ")
         
         dismiss(animated: true, completion: nil)
+        
     }
     
     /*
