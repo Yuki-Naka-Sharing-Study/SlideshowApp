@@ -11,6 +11,16 @@ class ViewController: UIViewController {
     // 配列に指定するindex番号を宣言
     var nowIndex:Int = 0
     
+    // スライドショーに使用するタイマーを宣言
+    var timer: Timer!
+    
+    // outletの接続
+    @IBOutlet weak var playbackStopButton: UIButton!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var goButton: UIButton!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func Back(sender: AnyObject) {
@@ -73,6 +83,31 @@ class ViewController: UIViewController {
     
         print("タップ")
         
+        //画面遷移後１つ目の画面のスライドショーを止める
+        // 再生中か停止しているかを判定
+        if (timer == nil) {
+            // 再生時の処理を実装
+            // タイマーをセットする
+            timer = Timer.scheduledTimer(timeInterval: 2.0,
+            target: self, selector: #selector(changeImage),
+             userInfo: nil, repeats: true)
+            
+            backButton.isEnabled = false
+            goButton.isEnabled = false
+
+        } else {
+            // 停止時の処理を実装
+            // タイマーを停止する
+            timer.invalidate()
+                    
+            // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+            timer = nil
+            
+            backButton.isEnabled = true
+            goButton.isEnabled = true
+
+        }
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nextVC = storyboard.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController
         
@@ -82,38 +117,7 @@ class ViewController: UIViewController {
         //画面遷移
         present(nextVC, animated: true, completion: nil)
         
-        //画面遷移後１つ目の画面のスライドショーを止める
-        // 再生中か停止しているかを判定
-        if (timer == nil) {
-            // 再生時の処理を実装
-                    
-            // タイマーをセットする
-            timer = Timer.scheduledTimer(timeInterval: 2.0,
-            target: self, selector: #selector(changeImage),
-             userInfo: nil, repeats: true)
-
-        } else {
-            // 停止時の処理を実装
-            // タイマーを停止する
-            timer.invalidate()
-                    
-            // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
-            timer = nil
-
-        }
     }
-    
-    // outletの接続
-    @IBOutlet weak var playbackStopButton: UIButton!
-    
-    
-    @IBOutlet weak var backButton: UIButton!
-    
-    
-    @IBOutlet weak var goButton: UIButton!
-    
-    // スライドショーに使用するタイマーを宣言
-    var timer: Timer!
     
     // スライドショーさせる画像の配列を宣言
     var imageArray:[UIImage] = [
