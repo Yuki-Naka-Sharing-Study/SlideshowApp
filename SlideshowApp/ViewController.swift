@@ -88,8 +88,8 @@ class ViewController: UIViewController {
         if (timer == nil) {
             // 再生時の処理を実装
             
-            backButton.isEnabled = false
-            goButton.isEnabled = false
+            backButton.isEnabled = true
+            goButton.isEnabled = true
 
         } else {
             // 停止時の処理を実装
