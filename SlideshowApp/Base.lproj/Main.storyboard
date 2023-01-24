@@ -153,7 +153,6 @@
                     <navigationItem key="navigationItem" id="rUI-Dd-jDA"/>
                     <connections>
                         <outlet property="imageView2" destination="Kbo-mB-MPL" id="tU3-f7-a8W"/>
-                        <outlet property="playbackStopButton" destination="eWA-oW-fTR" id="D8f-x1-Nn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncO-SE-gve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

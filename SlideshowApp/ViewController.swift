@@ -114,6 +114,9 @@ class ViewController: UIViewController {
         //画面遷移
         present(nextVC, animated: true, completion: nil)
         
+        // ボタンの名前を「再生」にする
+        playbackStopButton.setTitle("再生", for: .normal)
+        
     }
     
     // スライドショーさせる画像の配列を宣言

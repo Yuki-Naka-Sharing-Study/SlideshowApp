@@ -10,8 +10,6 @@ class NextViewController: UIViewController {
     
     @IBOutlet weak var imageView2: UIImageView!
     
-    @IBOutlet weak var playbackStopButton: UIButton!
-    
     var image: UIImage?
     
     override func viewDidLoad() {
@@ -24,9 +22,6 @@ class NextViewController: UIViewController {
     
     @IBAction func backHome(_ sender: Any) {
         print("タップ")
-        
-        // ボタンの名前を「再生」にする
-        playbackStopButton.setTitle("再生", for: .normal)
         
         dismiss(animated: true, completion: nil)
         
