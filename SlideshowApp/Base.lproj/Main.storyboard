@@ -49,6 +49,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="再生/停止"/>
                                                                 <connections>
+                                                                    <action selector="p:" destination="YZ1-Wu-nBe" eventType="touchUpInside" id="bVO-UR-mew"/>
                                                                     <action selector="slideShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8B-nE-674"/>
                                                                 </connections>
                                                             </button>
@@ -102,6 +103,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="YZ1-Wu-nBe" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="IQ9-c7-qQw">
                     <connections>
                         <action selector="imageViewTapped:" destination="BYZ-38-t0r" id="92i-5D-gpS"/>
@@ -151,6 +153,7 @@
                     <navigationItem key="navigationItem" id="rUI-Dd-jDA"/>
                     <connections>
                         <outlet property="imageView2" destination="Kbo-mB-MPL" id="tU3-f7-a8W"/>
+                        <outlet property="playbackStopButton" destination="eWA-oW-fTR" id="D8f-x1-Nn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncO-SE-gve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

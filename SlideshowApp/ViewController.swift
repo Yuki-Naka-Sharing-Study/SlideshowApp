@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    
     @IBAction func Back(sender: AnyObject) {
         
         // 表示している画像の番号を1減らす
